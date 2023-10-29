@@ -3,15 +3,17 @@ import { MouseEvent } from "react";
 
 const SidePanel = () => {
   let items = [
+    "Bio",
     "Commodities-Conflict",
     "Aircraft Delay Prediction",
     "Resume",
-    "Github",
-    "LinkedIn",
   ];
+
+  let link_list = ["Github", "LinkedIn"];
 
   //Statehook for clicking
   const [selectIndex, setSelectedIndex] = useState(-1);
+  const [selectIndexLink, setSelectedIndexLink] = useState(-1);
 
   return (
     <>
@@ -32,6 +34,29 @@ const SidePanel = () => {
             {item}
           </li>
         ))}
+        <h1>Links</h1>
+        <button
+          type="button"
+          onClick={(e) => {
+            e.preventDefault();
+            window.location.href = "https://github.com/pinstripezebra";
+          }}
+        >
+          {" "}
+          github
+        </button>
+
+        <button
+          type="button"
+          onClick={(e) => {
+            e.preventDefault();
+            window.location.href =
+              "https://www.linkedin.com/in/lucas-see-6b439188/";
+          }}
+        >
+          {" "}
+          LinkedIn
+        </button>
       </ul>
     </>
   );
