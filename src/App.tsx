@@ -1,5 +1,11 @@
 import { Grid, GridItem, Show } from "@chakra-ui/react";
 import NavBar from "./components/NavBar";
+import ContentGrid from "./components/ContentGrid";
+import ProjectCard from "./components/ProjectCard";
+
+const firstTitle = "Commodities-Conflict Correlation";
+const firstDescription =
+  "This project examines the relation between global conflict and commodities pricing.";
 
 function App() {
   return (
@@ -10,7 +16,9 @@ function App() {
       <GridItem area="aside" bg="gold">
         Aside
       </GridItem>
-      <GridItem area="main">Main</GridItem>
+      <GridItem area="main">
+        <ProjectCard title={firstTitle} description={firstDescription} />
+      </GridItem>
     </Grid>
   );
 }
