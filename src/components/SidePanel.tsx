@@ -35,28 +35,30 @@ const SidePanel = () => {
           </li>
         ))}
         <h1>Links</h1>
-        <button
-          type="button"
-          onClick={(e) => {
-            e.preventDefault();
-            window.location.href = "https://github.com/pinstripezebra";
-          }}
-        >
-          {" "}
-          github
-        </button>
+        <ul className="list-group" style={{ justifyContent: "left" }}>
+          <button
+            type="button"
+            onClick={(e) => {
+              e.preventDefault();
+              window.location.href = "https://github.com/pinstripezebra";
+            }}
+          >
+            {" "}
+            github
+          </button>
 
-        <button
-          type="button"
-          onClick={(e) => {
-            e.preventDefault();
-            window.location.href =
-              "https://www.linkedin.com/in/lucas-see-6b439188/";
-          }}
-        >
-          {" "}
-          LinkedIn
-        </button>
+          <button
+            type="button"
+            onClick={(e) => {
+              e.preventDefault();
+              window.location.href =
+                "https://www.linkedin.com/in/lucas-see-6b439188/";
+            }}
+          >
+            {" "}
+            LinkedIn
+          </button>
+        </ul>
       </ul>
     </>
   );

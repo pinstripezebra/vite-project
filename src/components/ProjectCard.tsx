@@ -14,14 +14,16 @@ import React from "react";
 interface Props {
   title: string;
   description: string;
+  test: string;
 }
-const ProjectCard = ({ title, description }: Props) => {
+const ProjectCard = ({ title, description, test }: Props) => {
   return (
     <Card>
       <CardBody>
         <Heading>{title}</Heading>
         <Text>{description}</Text>
         <Image src={ConflictImage} />
+        <Text>{test}</Text>
       </CardBody>
     </Card>
   );
