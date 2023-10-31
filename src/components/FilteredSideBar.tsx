@@ -29,6 +29,35 @@ const FilteredSideBar = ({ onSelectProject }: Props) => {
             </HStack>
           </ListItem>
         ))}
+        <ListItem>
+          <h1>Links</h1>
+        </ListItem>
+        <ListItem>
+          <Button
+            type="button"
+            onClick={(e) => {
+              e.preventDefault();
+              window.location.href = "https://github.com/pinstripezebra";
+            }}
+          >
+            {" "}
+            github
+          </Button>
+        </ListItem>
+
+        <ListItem>
+          <Button
+            type="button"
+            onClick={(e) => {
+              e.preventDefault();
+              window.location.href =
+                "https://www.linkedin.com/in/lucas-see-6b439188/";
+            }}
+          >
+            {" "}
+            LinkedIn
+          </Button>
+        </ListItem>
       </List>
     </>
   );
