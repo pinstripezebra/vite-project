@@ -6,11 +6,17 @@ import SidePanel from "./components/SidePanel";
 import FilteredSideBar from "./components/FilteredSideBar";
 import { useState } from "react";
 
+import ConflictImage from "./assets/conflict-commodities.jpg";
+import logo from "./assets/testLogo.jpg";
+
 const firstTitle = "Commodities-Conflict Correlation";
 const firstDescription =
   "This project examines the relation between global conflict and commodities pricing.";
-
 const firstHeading = "List";
+
+const secondTitle = "Aircraft Delay Predictions";
+const secondDescription =
+  "A project using a deep learning approach for aircraft delay prediction.";
 
 function App() {
   //Variable for storing selected project
@@ -24,11 +30,23 @@ function App() {
         <FilteredSideBar onSelectProject={(String) => setProject(String)} />
       </GridItem>
       <GridItem area="main">
-        <ProjectCard
-          title={firstTitle}
-          description={firstDescription}
-          test={selectedProject}
-        />
+        {selectedProject == "Commodities-Conflict" && (
+          <ProjectCard
+            title={firstTitle}
+            description={firstDescription}
+            test={selectedProject}
+            image={ConflictImage}
+          />
+        )}
+        |
+        {selectedProject == "Aircraft Delay Prediction" && (
+          <ProjectCard
+            title={secondTitle}
+            description={secondDescription}
+            test={selectedProject}
+            image={logo}
+          />
+        )}
       </GridItem>
     </Grid>
   );
