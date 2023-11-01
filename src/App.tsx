@@ -10,6 +10,7 @@ import ConflictImage from "./assets/conflict-commodities.jpg";
 import logo from "./assets/testLogo.jpg";
 import BioPicture from "./assets/BioPicture.jpg";
 import BioCard from "./components/BioCard";
+import ResumeCard from "./components/ResumeCard";
 
 const firstTitle = "Commodities-Conflict Correlation";
 const firstDescription =
@@ -62,6 +63,7 @@ function App() {
             image={BioPicture}
           />
         )}
+        |{selectedProject == "Resume" && <ResumeCard />}
       </GridItem>
     </Grid>
   );
