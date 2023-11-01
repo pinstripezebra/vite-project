@@ -8,6 +8,7 @@ import {
   UseImageProps,
   UseImageReturn,
   HStack,
+  Badge,
 } from "@chakra-ui/react";
 
 import React from "react";
@@ -16,18 +17,28 @@ interface Props {
   title: string;
   description: string;
   image: string;
-  skills: string;
 }
 
-const BioCard = ({ title, description, image, skills }: Props) => {
+const BioCard = ({ title, description, image }: Props) => {
+  let skills = [
+    "Python",
+    "SQL",
+    "Machine Learning",
+    "MS Azure",
+    "Data Analysis",
+    "Data Visualization",
+    "React",
+  ];
   return (
     <Card>
       <CardBody>
         <Heading>{title}</Heading>
         <Text>{description}</Text>
         <HStack>
-          <Text>Skills: </Text>
-          <Text>{skills}</Text>
+          <Heading as="h2">Skills: </Heading>
+          {skills.map((skill) => (
+            <Badge>{skill}</Badge>
+          ))}
         </HStack>
         <Image src={image} />
       </CardBody>

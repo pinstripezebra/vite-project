@@ -22,7 +22,7 @@ const secondDescription =
 
 const bioTitle = "Biograpy";
 const bioContent =
-  "Data Science professional with a background in Industrial Engineering and 4 years experience delivering Analytic Solutions in the SemiConductor Manufacturing Space. In my spare time I enjoy exploring Socio-Economic and Political Data, Image Recognition, and NLP.";
+  "Data Science professional with a background in Industrial Engineering and 4 years experience delivering Analytic Solutions in the SemiConductor Manufacturing Space. Specific focus on deploying model based on tabular datasets using inference, prediction, or clustering to drive business value. \nIn my spare time I enjoy exploring Socio-Economic and Political Data, Image Recognition, and NLP.";
 const bioSkills = "Python, SQL, Machine Learning, MS Azure, Data Analysis";
 
 function App() {
@@ -60,7 +60,6 @@ function App() {
             title={bioTitle}
             description={bioContent}
             image={BioPicture}
-            skills={bioSkills}
           />
         )}
       </GridItem>
