@@ -17,10 +17,12 @@ const firstTitle = "Commodities-Conflict Correlation";
 const firstDescription =
   "This project examines the relation between global conflict and commodities pricing using Dash and Sklearn. Data is pulled from the Nasdaq and ACLED Apis, cleaned, aggregated, and modeled with Pandas/SkLearn, and then visualized in a Dash Application. The end Application was then deployed as an Azure Web application.";
 const firstHeading = "List";
+const firstSkillList = ["Python", "Pandas", "Dash", "Sklearn", "Azure"];
 
 const secondTitle = "Aircraft Delay Predictions";
 const secondDescription =
   "This project uses a deep learning approach to airline delay prediction using operation and weather data to predict whether an individual flight will be delayed.";
+const secondSkillList = ["Python", "Pandas", "Tensorflow", "Sklearn"];
 
 const bioTitle = "Biograpy";
 const bioContent =
@@ -47,6 +49,7 @@ function App() {
             image={ConflictImage}
             link={"https://commoditesconflict.azurewebsites.net/"}
             linkName="Commmodities-Conflict Azure Application"
+            skills={firstSkillList}
           />
         )}
         |
@@ -58,6 +61,7 @@ function App() {
             image={AirlineImage}
             link={"https://github.com/pinstripezebra/DS785-Capstone"}
             linkName="Delay Prediction Github"
+            skills={secondSkillList}
           />
         )}{" "}
         |

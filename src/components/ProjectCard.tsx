@@ -8,6 +8,8 @@ import {
   UseImageProps,
   UseImageReturn,
   Link,
+  HStack,
+  Badge,
 } from "@chakra-ui/react";
 import { ExternalLinkIcon } from "@chakra-ui/icons";
 import React from "react";
@@ -19,6 +21,7 @@ interface Props {
   image: string;
   link: string;
   linkName: string;
+  skills: string[];
 }
 const ProjectCard = ({
   title,
@@ -27,6 +30,7 @@ const ProjectCard = ({
   image,
   link,
   linkName,
+  skills,
 }: Props) => {
   return (
     <Card>
@@ -37,6 +41,12 @@ const ProjectCard = ({
           {linkName}
           <ExternalLinkIcon mx="2px" />
         </Link>
+        <HStack>
+          <Heading as="h2">Skills: </Heading>
+          {skills.map((skill) => (
+            <Badge>{skill}</Badge>
+          ))}
+        </HStack>
         <Image src={image} />
         <Text>{test}</Text>
       </CardBody>
