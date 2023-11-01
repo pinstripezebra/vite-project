@@ -9,6 +9,7 @@ import { useState } from "react";
 import ConflictImage from "./assets/conflict-commodities.jpg";
 import logo from "./assets/testLogo.jpg";
 import BioPicture from "./assets/BioPicture.jpg";
+import AirlineImage from "./assets/airline.jpg";
 import BioCard from "./components/BioCard";
 import ResumeCard from "./components/ResumeCard";
 
@@ -19,7 +20,7 @@ const firstHeading = "List";
 
 const secondTitle = "Aircraft Delay Predictions";
 const secondDescription =
-  "A project using a deep learning approach for aircraft delay prediction.";
+  "This project uses a deep learning approach to airline delay prediction using operation and weather data to predict whether an individual flight will be delayed.";
 
 const bioTitle = "Biograpy";
 const bioContent =
@@ -44,6 +45,8 @@ function App() {
             description={firstDescription}
             test={selectedProject}
             image={ConflictImage}
+            link={"https://commoditesconflict.azurewebsites.net/"}
+            linkName="Commmodities-Conflict Azure Application"
           />
         )}
         |
@@ -52,7 +55,9 @@ function App() {
             title={secondTitle}
             description={secondDescription}
             test={selectedProject}
-            image={logo}
+            image={AirlineImage}
+            link={"https://github.com/pinstripezebra/DS785-Capstone"}
+            linkName="Delay Prediction Github"
           />
         )}{" "}
         |
