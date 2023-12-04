@@ -37,7 +37,8 @@ const bioSkills = "Python, SQL, Machine Learning, MS Azure, Data Analysis";
 
 function App() {
   //Variable for storing selected project
-  const [selectedProject, setProject] = useState("");
+  //const [selectedProject, setProject] = useState("");
+  const [selectedProject, setProject] = useState("Biography");
   return (
     <Grid templateAreas={'"nav nav" "aside main"'}>
       <GridItem area="nav" bg="cadetblue">
@@ -83,7 +84,7 @@ function App() {
           />
         )}{" "}
         |
-        {selectedProject == "Bio" && (
+        {selectedProject == "Biography" && (
           <BioCard
             title={bioTitle}
             description={bioContent}

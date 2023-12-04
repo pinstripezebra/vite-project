@@ -6,7 +6,7 @@ export const NavBar = () => {
   return (
     <HStack justifyContent="space-between" padding="10px">
       <Image src={logo} boxSize="100px"></Image>
-      <Text> Portfolio</Text>
+      <h1> Lucas See, Portfolio of Work</h1>
       <ColorModeSwitch />
     </HStack>
   );
