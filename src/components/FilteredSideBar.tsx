@@ -6,12 +6,11 @@ interface Props {
 }
 
 const FilteredSideBar = ({ onSelectProject }: Props) => {
-  let items = [
-    "Biography",
+  let items = ["Biography", "Resume"];
+  let secondItems = [
     "Commodities-Conflict",
     "Aircraft Delay Prediction",
     "Heart Failure Prediction",
-    "Resume",
   ];
   //Hook function
   const [selectedIndex, setSelectedIndex] = useState(-1);
@@ -32,6 +31,23 @@ const FilteredSideBar = ({ onSelectProject }: Props) => {
             </HStack>
           </ListItem>
         ))}
+        <ListItem>
+          <h1>Projects</h1>
+        </ListItem>
+        <ListItem>
+          {secondItems.map((secondItem) => (
+            <ListItem key={secondItem}>
+              <HStack>
+                <Button
+                  onClick={() => onSelectProject(secondItem)}
+                  key={secondItem}
+                >
+                  {secondItem}
+                </Button>
+              </HStack>
+            </ListItem>
+          ))}
+        </ListItem>
         <ListItem>
           <h1>Links</h1>
         </ListItem>
