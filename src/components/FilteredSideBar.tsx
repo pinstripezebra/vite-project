@@ -7,9 +7,10 @@ interface Props {
 
 const FilteredSideBar = ({ onSelectProject }: Props) => {
   let items = [
-    "Bio",
+    "Biography",
     "Commodities-Conflict",
     "Aircraft Delay Prediction",
+    "Heart Failure Prediction",
     "Resume",
   ];
   //Hook function
@@ -56,6 +57,19 @@ const FilteredSideBar = ({ onSelectProject }: Props) => {
           >
             {" "}
             LinkedIn
+          </Button>
+        </ListItem>
+
+        <ListItem>
+          <Button
+            type="button"
+            onClick={(e) => {
+              e.preventDefault();
+              window.location.href = "https://medium.com/@seelcs12";
+            }}
+          >
+            {" "}
+            Medium
           </Button>
         </ListItem>
       </List>
