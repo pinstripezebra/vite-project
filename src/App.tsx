@@ -7,6 +7,7 @@ import FilteredSideBar from "./components/FilteredSideBar";
 import { useState } from "react";
 
 import ConflictImage from "./assets/conflict-commodities.jpg";
+import HeartFailureImage from "./assets/heart-failure-prediction.jpg";
 import logo from "./assets/testLogo.jpg";
 import BioPicture from "./assets/BioPicture.jpg";
 import AirlineImage from "./assets/airline.jpg";
@@ -23,6 +24,11 @@ const secondTitle = "Aircraft Delay Predictions";
 const secondDescription =
   "This project uses a deep learning approach to airline delay prediction using operation and weather data to predict whether an individual flight will be delayed.";
 const secondSkillList = ["Python", "Pandas", "Tensorflow", "Sklearn"];
+
+const thirdTitle = "Heart Failure Prediction";
+const thirdDescription =
+  "This project uses a Random Forest Classifier to predict heart failure based on input vairables like blood pressure, diabetes, etc. The data and model are then deployed as a Dash Application on Azure.";
+const thirdSkillList = ["Python", "Pandas", "Dash", "Sklearn", "Plotly"];
 
 const bioTitle = "Biograpy";
 const bioContent =
@@ -49,6 +55,18 @@ function App() {
             image={ConflictImage}
             link={"https://commoditesconflict.azurewebsites.net/"}
             linkName="Commmodities-Conflict Azure Application"
+            skills={firstSkillList}
+          />
+        )}
+        |
+        {selectedProject == "Heart Failure Prediction" && (
+          <ProjectCard
+            title={thirdTitle}
+            description={thirdDescription}
+            test={selectedProject}
+            image={HeartFailureImage}
+            link={"https://dash-tutorial.azurewebsites.net/"}
+            linkName="Heart-Failure-Prediction Azure Application"
             skills={firstSkillList}
           />
         )}
