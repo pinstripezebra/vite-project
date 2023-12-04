@@ -59,7 +59,6 @@ function App() {
             skills={firstSkillList}
           />
         )}
-        |
         {selectedProject == "Heart Failure Prediction" && (
           <ProjectCard
             title={thirdTitle}
@@ -71,7 +70,6 @@ function App() {
             skills={firstSkillList}
           />
         )}
-        |
         {selectedProject == "Aircraft Delay Prediction" && (
           <ProjectCard
             title={secondTitle}
@@ -83,7 +81,6 @@ function App() {
             skills={secondSkillList}
           />
         )}{" "}
-        |
         {selectedProject == "Biography" && (
           <BioCard
             title={bioTitle}
@@ -91,7 +88,7 @@ function App() {
             image={BioPicture}
           />
         )}
-        |{selectedProject == "Resume" && <ResumeCard />}
+        {selectedProject == "Resume" && <ResumeCard />}
       </GridItem>
     </Grid>
   );
