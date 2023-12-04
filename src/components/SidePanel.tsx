@@ -6,10 +6,11 @@ const SidePanel = () => {
     "Bio",
     "Commodities-Conflict",
     "Aircraft Delay Prediction",
+    "Heart Failure Prediction",
     "Resume",
   ];
 
-  let link_list = ["Github", "LinkedIn"];
+  let link_list = ["Github", "LinkedIn", "Medium"];
 
   //Statehook for clicking
   const [selectIndex, setSelectedIndex] = useState(-1);
@@ -57,6 +58,17 @@ const SidePanel = () => {
           >
             {" "}
             LinkedIn
+          </button>
+
+          <button
+            type="button"
+            onClick={(e) => {
+              e.preventDefault();
+              window.location.href = "https://medium.com/@seelcs12";
+            }}
+          >
+            {" "}
+            Medium
           </button>
         </ul>
       </ul>
