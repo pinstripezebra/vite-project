@@ -9,6 +9,7 @@ import {
   UseImageReturn,
   HStack,
   Badge,
+  VStack,
 } from "@chakra-ui/react";
 
 import React from "react";
@@ -33,14 +34,18 @@ const BioCard = ({ title, description, image }: Props) => {
     <Card>
       <CardBody>
         <Heading>{title}</Heading>
-        <Text>{description}</Text>
-        <HStack>
-          <Heading as="h2">Skills: </Heading>
-          {skills.map((skill) => (
-            <Badge>{skill}</Badge>
-          ))}
+        <HStack align={"top"}>
+          <Image src={image} />
+          <VStack align={"left"}>
+            <Text>{description}</Text>
+            <HStack>
+              <Heading as="h2">Skills: </Heading>
+              {skills.map((skill) => (
+                <Badge>{skill}</Badge>
+              ))}
+            </HStack>
+          </VStack>
         </HStack>
-        <Image src={image} />
       </CardBody>
     </Card>
   );
