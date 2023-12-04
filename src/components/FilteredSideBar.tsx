@@ -19,8 +19,10 @@ const FilteredSideBar = ({ onSelectProject }: Props) => {
 
   return (
     <>
-      <h1>heading</h1>
       <List>
+        <ListItem>
+          <h1>About Me</h1>
+        </ListItem>
         {items.map((item) => (
           <ListItem key={item}>
             <HStack>
