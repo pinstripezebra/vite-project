@@ -1,7 +1,7 @@
 {"name": "vite-project",
   "private": true,
   "version": "0.0.0",
-  "homepage": ".",
+  "homepage": "https://mango-flower-0d54d411e.4.azurestaticapps.net/",
   "type": "module",
   "scripts": {
     "dev": "vite",
