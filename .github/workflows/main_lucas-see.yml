@@ -59,4 +59,4 @@ jobs:
           app-name: 'Lucas-See'
           slot-name: 'Production'
           package: .
-          publish-profile: ${{ secrets.AZUREAPPSERVICE_PUBLISHPROFILE_80B7898C7AE74F5CB57A8262BEDECEC4 }}
+          publish-profile: ${{ secrets.AZUREAPPSERVICE_PUBLISHPROFILE_477F6D81E5B949E7AEC223AE12A2B96B }}
