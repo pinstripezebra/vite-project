@@ -6,6 +6,7 @@ import SidePanel from "./components/SidePanel";
 import FilteredSideBar from "./components/FilteredSideBar";
 import { useState } from "react";
 
+import GraffitiImage from "./assets/graffiti.jpg";
 import ConflictImage from "./assets/conflict-commodities.jpg";
 import HeartFailureImage from "./assets/heart-failure-prediction.jpg";
 import logo from "./assets/testLogo.jpg";
@@ -13,6 +14,17 @@ import BioPicture from "./assets/BioPicture.jpg";
 import AirlineImage from "./assets/airline.jpg";
 import BioCard from "./components/BioCard";
 import ResumeCard from "./components/ResumeCard";
+
+const graffitiTitle = "Graffiti Identification";
+const graffitiDescription =
+  "This projects trains a CNN to classify Graffiti in google streetview images. Over 15,000 images are then sampled from top U.S. cities and Graffiti rates are compared with socioeconomic data from the U.S. Census. Results are displayed in a front end Dash Application Deployed on MS Azure.";
+const graffitiSkillList = [
+  "Python",
+  "Tensorflow",
+  "Dash",
+  "Computer Vision",
+  "Azure",
+];
 
 const firstTitle = "Commodities-Conflict Correlation";
 const firstDescription =
@@ -48,6 +60,17 @@ function App() {
         <FilteredSideBar onSelectProject={(String) => setProject(String)} />
       </GridItem>
       <GridItem area="main">
+        {selectedProject == "Graffiti Identification" && (
+          <ProjectCard
+            title={graffitiTitle}
+            description={graffitiDescription}
+            test={selectedProject}
+            image={GraffitiImage}
+            link={"https://graffiti-tracking.azurewebsites.net/"}
+            linkName="Graffiti-Identification Azure Application"
+            skills={graffitiSkillList}
+          />
+        )}
         {selectedProject == "Commodities-Conflict" && (
           <ProjectCard
             title={firstTitle}

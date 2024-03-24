@@ -4,6 +4,7 @@ import { MouseEvent } from "react";
 const SidePanel = () => {
   let items = [
     "Bio",
+    "Graffiti Identification",
     "Commodities-Conflict",
     "Aircraft Delay Prediction",
     "Heart Failure Prediction",
