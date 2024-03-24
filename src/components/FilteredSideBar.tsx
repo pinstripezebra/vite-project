@@ -8,6 +8,7 @@ interface Props {
 const FilteredSideBar = ({ onSelectProject }: Props) => {
   let items = ["Biography", "Resume"];
   let secondItems = [
+    "Graffiti Identification",
     "Commodities-Conflict",
     "Aircraft Delay Prediction",
     "Heart Failure Prediction",
