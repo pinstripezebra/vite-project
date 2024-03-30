@@ -42,7 +42,7 @@ const thirdDescription =
   "This project uses a Random Forest Classifier to predict heart failure based on input vairables like blood pressure, diabetes, etc. The data and model are then deployed as a Dash Application on Azure.";
 const thirdSkillList = ["Python", "Pandas", "Dash", "Sklearn", "Plotly"];
 
-const bioTitle = "Biograpy";
+const bioTitle = "Biography";
 const bioContent =
   "I'm a Data Science professional with a background in Industrial Engineering and 4 years experience delivering Analytic Solutions in the Semiconductor Space. My education includes a Bachelors in Industrial Engineering with a Masters in Data Science. My recent work has focused on developing and deploying models based on tabular datasets using inference, prediction, or clustering to drive business value. In my spare time I enjoy exploring Socio-Economic and Political Data, Image Recognition, and NLP.";
 const bioSkills = "Python, SQL, Machine Learning, MS Azure, Data Analysis";

@@ -28,6 +28,7 @@ const BioCard = ({ title, description, image }: Props) => {
     "MS Azure",
     "Data Analysis",
     "Data Visualization",
+    "Statistical Analysis",
     "React",
   ];
   return (
